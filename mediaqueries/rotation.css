@@ -1,0 +1,32 @@
+@media only screen and (orientation : portrait) {
+	body {
+		background-color: #ffe2ca;
+	}
+	#portait {
+		display: block;
+	}
+	#landscape {
+		display: none;
+	}
+}
+
+@media only screen and (orientation : landscape) {
+	body {
+		background-color: #c1fffa;
+	}
+	#portait {
+		display: none;
+	}
+	#landscape {
+		display: block;
+	}
+}
+
+#portait {
+	transform: rotate(-90deg);
+	transform-origin: left top;
+	position: absolute;
+	top: 100%;
+	left:0;
+}
+
